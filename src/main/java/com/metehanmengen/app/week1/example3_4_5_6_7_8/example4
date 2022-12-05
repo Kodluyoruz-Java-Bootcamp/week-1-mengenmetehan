@@ -1,0 +1,13 @@
+4. ’da heap ve stack kavramlarını örneklerle açıklayın
+------------------------------------------------------------------------------------------------------------------------
+
+Stack ve Heap Ram'in mantıksal bölümleridir.
+
+Stack : LIFO mantığı ile çalışır (Last in First out) yani ilk giren son çıkar.
+Stack'te veri elemanları referanslar register işlemler gibi elemanlar (değer türleri) tutulur.
+Kolaylıkla dolabilir mesela recursive işlemler yapılırken uygun yerde metot sonlandırılmazsa, StackOverFlow
+exception'ı alırız. Bu yüzden stack'in dolmamasına dikkat etmeliyiz.
+
+Heap : Tüm nesneler (referans değerleri) heap'te tutulur. heap'te yaratılan nesnenin referansı Stack'te tutulur.
+Heap'te gereksiz nesne tutulması ve nesnelerin garbage collector ile silinememesi durumunda bellek sızıntısı olur.
+O yüzden nesne yaratmak maliyetli bir iştir. Heap'in kullanımına da dikkat edilmesi gerekir.

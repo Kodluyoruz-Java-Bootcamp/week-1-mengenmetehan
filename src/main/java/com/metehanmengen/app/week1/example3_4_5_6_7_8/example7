@@ -1,0 +1,8 @@
+ 7.Build Tool nedir? Java ekosistemindeki build toolsar neler açıklayın?
+------------------------------------------------------------------------------------------------------------------------
+
+ Build araçları kaynak koddan çalıştırılabilir uygulamaların oluşturmasını kolaylaştıran programlardır.
+ Java'da build tools'lardan en çok kullanılanlar Maven ve Gradle dır.
+ Maven'da Pom.xml - Gradle build.gradle dosyaları içerisinde, projenin bilgilerinin (version, artifactId, name vs) , bağımlılıkların
+ yönetimi ve versionlama gibi işlemler yapılır.
+ Ayrıca repositorylere ulaşım ile uzak repo'lardan (maven remote gibi) da dependency yönetimi yapılabilir.

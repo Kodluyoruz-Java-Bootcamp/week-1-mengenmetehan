@@ -1,0 +1,9 @@
+ 6. Java neden çoklu kalıtımı desteklemez açıklayın?
+------------------------------------------------------------------------------------------------------------------------
+
+ Java'da multiple inheritance geçersizdir. Multiple inheritance özelliği interface'lerin implemente edilmesi ile
+ oluşturulur.
+ Bir sınıf sadece 1 sınıfı extend edebilir ama istenildiği kadar interface'i implemente edebilir.
+ Pratikte bir sınıfın birden fazla sınıfı extend etmesi farklı problemlere de neden olabilir. (diamond problem
+ gibi c++ daki)
+ Bu nedenle çoklu türetme işlemi interface'ler aracılığı ile yapılabilir.

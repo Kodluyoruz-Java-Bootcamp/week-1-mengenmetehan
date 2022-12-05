@@ -1,0 +1,13 @@
+ 5. String class’ı nasıl immutable olmayı sağlamaktadır örnek ve çizimlerle açıklayınız
+------------------------------------------------------------------------------------------------------------------------
+
+ String sınıfı Javada final olarak tanımlanmıştır. String sınıfından üretilen bir nesne üzerinde değişiklik yapılamaz.
+ String eğer immutable olmasa idi kolaylıkla güvenlik zafiyetleri oluşabilirdi.
+ Eğer bir String nesnesinde değişiklik yapılması isteniyorsa değişiklik yapılan nesnenin referansı değiştirilmesi istenilen
+ nesnenin referansına atanmalıdır.
+
+ String s = "ali";
+
+ s.upperCase() işlemi geçersizdir.
+
+ s = s.upperCase(); denilerek değişiklik yapılan nesnenin referansı değiştirilmek istenilene atanmalıdır.

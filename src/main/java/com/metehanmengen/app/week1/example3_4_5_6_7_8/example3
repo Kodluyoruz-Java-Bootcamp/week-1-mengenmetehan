@@ -1,0 +1,6 @@
+3. Java’nın platform bağımsızlığını nasıl sağladığını anlatınız.
+------------------------------------------------------------------------------------------------------------------------
+
+WORA : Write once run anywhere, 1 kere yaz her yerde çalıştır. Yani java compiler ile derlenen bir byte code
+(.class uzatılı dosya) herhangi bir bilgisayardaki jvm üzerinde sorunsuz çalışabilir. Byte codeların okunması işlemciden
+bağımsızdır. JVM ile okunur. Platforma bağımsız olmaktan bunu anlayabiliriz.

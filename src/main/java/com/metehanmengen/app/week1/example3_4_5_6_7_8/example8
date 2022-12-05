@@ -1,0 +1,65 @@
+ 8. Collection framework içerisindeki bütün yapıları önemli methodlarıyla örnekleyip açıklayınız
+
+ -----------------------------------------------------------------------------------------------------------------------
+
+ Collection Java'ya 1.2 ile birlikte gelmiştir. Generic yapılarıyla birlikte nesne tutabilen sınıflar oluşturmamızı
+ sağlayan bu interface, List, Set ve Queue interface'leri tarafından implemente edilir.
+
+ Collection iterable(dolaşılabilir tür olma) özelliğine sahiptir. Iterable interface'ini implemente eder.
+
+ add, addAll, removeAll, iterator, contains, size, clear, isEmpty gibi önemli metotları bulunmaktadır.
+ Iterator interface'inden gelen hasNext(), next(), remove() metotları da bulunur.
+
+   1- Liste tarzı collection sınıflar elemanları arasında öncelik-sonralık ilişkisi olan collection sınıflardır.
+List<E> arayüzü Collection<E> arayüzünden türetilmiştir. List<E> arayüzünün Collection<E> arayüzünden gelen metotları
+dışında önemli iki metotarından ikisi indexOf ve get metotlarıdır.
+indexOf metodu arama işleminde equals metoduna bakarak eşitlik karşılaştırması yapar.
+
+ArrayList: En çok kullanılan dinamik büyüyen dizilerden biridir.
+Default capacity'si 10 dur. Her capacity arttırmında capacity 2 katına çıkar.
+
+Bir kullanımına örnek;
+
+    ArrayList<String> list = new ArrayList<>();
+    list.add("Mete");
+    list.add("Mengen");
+    list.add("Ahmet");
+
+    int size = list.size();
+
+    list.remove(2); 2.indexteki elemanı atar.
+
+LinkedList : List<E> ve Deque<E> arayüzlerini implemente eder, elemanları bellekte peşpeşe tutmaz.
+Başa ve sona eleman ekleme silme işleminde ArrayList yerine tercih edilmelidir.
+eleman ekleme çıkarma işlemleri O1 karmaşıklıktadır. Ama her eleman diğer elemanın bellekteki yerinin bilgisini tuttuğu için
+zaman karmaşıklığı daha yüksektir. Başa ekleme yapıcak algoritmalarda tercih edilmelidir.
+
+Stack sınıfı : pop metodu diziden eleman çıkarır push eleman ekler, peek en üstteki elemanı gösterir ama diziden eleman çıkarmaz.
+Eğer stack boş ise EmptyStackException fırlatılır.
+Search metodu en üstteki eleman 1 numaralı indeks olmak üzere ilk bulduğu eleman için indeks numarasına geri döner.
+
+Vector sınıfı: ArrayList ile farkları, capacity değerini default olarak belirleyebiliyoruz. ve threadsafe'tir.
+Asenkron işlemlerde problem olmamasını istediğimiz kullanılabilir.
+
+   2- Set<E> arayüzünü destekleyen sınıflar küme collection sınıflarıdır. Set<E> arayüzü de Collection<E> arayüzünden türetilmiştir
+Küme collection sınıfları genel olarak Matematik'teki küme kavramının şu iki temel özelliğini içeren sınıflardır:
+- Bir kümede tüm elemanların sırasının önemi yoktur. Aslında burada sıra "sort" anlamında değil ekleme silme anlamında
+önceliği veya sonralık ilişkisidir. Bazı küme tarzı collection sınıflar eklenen elemanları "sıralar (sorting)".
+
+- Bir kümede bir elemandan yalnızca bir tane bulunur. Yani kümede eleman tekrar olmaz
+- TreeSet<T> collection sınıfı elemanları sıralı (sorted) biçiminde tutar. TreeSet compareTo metodunu çağırarak sıralamayı yapar.
+- HashSet sınıflar ise arka planda bir elemanın varlığını equals ve hashCode metotlarını kullanarak anlar. Bu durumda
+aynı olan elemanları eklemez. Elemanları sıralı tutmaz. Null tutmaya izin verir.
+
+
+3- Queue<E> arayüzü kuyruk biçiminde FIFO (first in first out) ilk giren ilk çıkar şeklinde tasarlanmıştır.
+ Queue<E> arayüzünü implemente eden collection sınıflara genel olarak "kuyruk tarzı collection"'lar denebilir. Linked
+sınıfı bu anlamda oldukça yeteneklidir denilebilir
+
+Deque<E> arayüzü Queue<E> arayüzünden türetilmiştir.
+
+
+
+
+
+
