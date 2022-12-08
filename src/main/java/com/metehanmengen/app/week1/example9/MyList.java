@@ -3,7 +3,7 @@ package com.metehanmengen.app.week1.example9;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class myList<S> {
+public class MyList<S> {
     private static final int DEFAULT_CAPACITY = 5;
     private static String[] elems = new String[DEFAULT_CAPACITY]; // 5 elemanlı boş String dizisi tutuluyor,
     private int index; //dizinin dolu eleman sayısını tutuyor.

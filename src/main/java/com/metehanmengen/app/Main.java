@@ -5,7 +5,7 @@ import com.metehanmengen.app.week1.example2.Example2;
 import com.metehanmengen.app.week1.example10.Client;
 import com.metehanmengen.app.week1.example10.Order;
 import com.metehanmengen.app.week1.example10.Product;
-import com.metehanmengen.app.week1.example9.myList;
+import com.metehanmengen.app.week1.example9.MyList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("9. sorunun çözümü-------------------------------------");
 
-        myList<String> sList = new myList<>();
+        MyList<String> sList = new MyList<>();
 
         sList.add("Cam");
         sList.add("Cila");
